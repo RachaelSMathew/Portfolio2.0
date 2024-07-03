@@ -14,15 +14,12 @@ export default function Page() {
   const [transformProjects, setTransformProjects] = useState(1)
   const [transformBooks, setTransformBooks] = useState(1)
   const [transformJobs, setTransformJobs] = useState(1)
-
-  const [windowSize, setWindowSize] = useState([
-    0,0
-  ]);
+  const [windowSize, setWindowSize] = useState([0,0]);
 
   useEffect(() => {
-    if (typeof window !== "undefined") setWindowSize([window.innerHeight, window.innerWidth]);
+    if (window !== null && typeof window !== "undefined") setWindowSize([window.innerHeight, window.innerWidth]);
     const windowSizeHandler = () => {
-      if (typeof window !== "undefined") setWindowSize([window.innerHeight, window.innerWidth]);
+      if (window !== null && typeof window !== "undefined") setWindowSize([window.innerHeight, window.innerWidth]);
     };
     window.addEventListener("resize", windowSizeHandler);
 
@@ -33,7 +30,7 @@ export default function Page() {
 
 
   return (
-    typeof window === "undefined" ? <></> :
+    window == null || typeof window === "undefined" ? <></> :
     <>
     <NavBar/>
     <Image src={background} style={{
