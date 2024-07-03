@@ -9,7 +9,7 @@ export default function Projects({transformBooks, transformProjects, transformJo
     return (
         (transformBooks !== 1.8 && transformJobs!==1.3) && <div onClick={()=>{transformProjects!==1.6 && setTransformProjects(1.6)}}  onMouseLeave={() => {if(transformProjects===1.1) setTransformProjects(1)}} onMouseEnter={() => {if(transformProjects==1) setTransformProjects(1.1)}}  style={{cursor: transformProjects !== 1.6 ? "pointer":"default", position: "relative", marginTop: transformProjects!==1.6?"0px":"100px", transition: "1.5s", transform: `scale(${transformProjects})`}}>
         <Image style={{display: transformJobs!== 1.3 && transformBooks!==1.8 ? "block":"none"}} src={projects} width={400} alt={""}    />
-        <div onMouseLeave={() => transformProjects!==1.6&&setOpacityImageProjects(0)} onMouseEnter={() => transformProjects!==1.6&&setOpacityImageProjects(0.5)} style={{position: "absolute", top: 60, bottom: 0, left: 30, height: "70%", width: "80%", transition: ".5s ease", backgroundColor: `  rgba(85,64,49,${opacityImageProjects})`}}>
+        <div onMouseLeave={() => transformProjects!==1.6&&setOpacityImageProjects(0)} onMouseEnter={() => transformProjects!==1.6&&setOpacityImageProjects(0.5)} style={{position: "absolute", top: 60, bottom: 0, left: 30, height: "70%", width: "80%", transition: ".5s ease", backgroundColor: `  rgba(158,103,36,${opacityImageProjects})`}}>
           {transformProjects !== 1.6 ? 
           <>
           <h1 style={{opacity: opacityImageProjects === 0?0:1, position: "absolute", transition: ".5s", top: 0, left: 40, color: "white", fontSize :"40px", }}>projects</h1>
