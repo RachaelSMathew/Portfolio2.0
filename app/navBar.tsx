@@ -14,9 +14,11 @@ export default function NavBar() {
   const [fbHover, setFBHover] = useState(0)
     
       useEffect(() => {
+        if (typeof window === "undefined") return
         setWindowSize([window.innerHeight, window.innerWidth]);
         setChangeNav(window.innerWidth<1300 && window.innerWidth > 650)
         const windowSizeHandler = () => {
+          if (typeof window === "undefined") return
           setWindowSize([window.innerHeight, window.innerWidth]);
           setChangeNav(window.innerWidth<1300 && window.innerWidth > 650)
         };
