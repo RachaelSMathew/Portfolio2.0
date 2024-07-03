@@ -14,7 +14,7 @@ export default function Projects({transformBooks, transformProjects, transformJo
           <>
           <h1 style={{opacity: opacityImageProjects === 0?0:1, position: "absolute", transition: ".5s", top: 0, left: 40, color: "white", fontSize :"40px", }}>projects</h1>
           <h1 style={{opacity: opacityImageProjects === 0?0:1, position: "absolute", transition: ".5s", top: "75%", left: 40, color: "white", fontSize :"20px", }}>Hearts are Trumps (1872)</h1></>:
-          <div style={{overflow: "scroll", top: 10, left: 30, width: "283px", height: "225px", position: "relative", backgroundColor: "rgba(242,191,184, 0.8)"}}>
+          <div style={{overflow: "scroll", top: 10, left: 30, width: "283px", height: "225px", position: "relative", backgroundColor: "rgba(173,125,56, 0.8)"}}>
           <div style={{position: "absolute", cursor: "pointer", transition:".5s", zIndex: 3, top: 0, right: 30, color: "black" }} onClick={()=>{setOpacityImageProjects(0); setTransformProjects(1)}} ><h1 style={{fontSize: "30px"}}>X</h1></div>
           <div style={{position: "absolute", transition: ".5s", left: 30, top: 10, right: 30, color: "black" }}>
             <h1 style={{fontSize :"20px", fontWeight: "bold"}}>Python Spellchecker<br/><h1 style={{fontSize:"15px"}}>Python</h1></h1>
