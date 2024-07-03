@@ -9,6 +9,7 @@ import VaraText from './components/VaraText'
 import Jobs from "./jobs"
 import Literature from "./literature"
 import Projects from "./projects"
+import { Head } from "next/document"
 
 export default function Page() {
   const [transformProjects, setTransformProjects] = useState(1)
@@ -35,6 +36,7 @@ export default function Page() {
   return (
     typeof window === "undefined" ? <></> :
     <>
+    <Head><title>rachael's world</title></Head>
     <NavBar/>
     <Image src={background} style={{
         position: "fixed",
