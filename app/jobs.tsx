@@ -14,7 +14,7 @@ export default function Jobs({transformBooks, transformProjects, transformJobs, 
           <>
           <h1 style={{opacity: opacityImageJobs === 0?0:1, position: "absolute", transition: ".5s", top: 0, left: 50, color: "white", fontSize :"35px", }}>past occupations</h1>
           <h1 style={{opacity: opacityImageJobs === 0?0:1, position: "absolute", transition: ".5s", top: "70%", left: 70, color: "white", fontSize :"20px", }}>The Martyr of <br/>the Solway(1871)</h1></>:
-          <div style={{overflow: "scroll", borderRadius: "210px /290px", width: "270px", height: "372px", position: "relative", backgroundColor: "rgba(190,172,124, 0.8)"}}>
+          <div style={{overflow: "scroll", borderRadius: "210px /290px", width: "270px", height: "372px", position: "relative", backgroundColor: "rgba(190,172,124, 0.3)"}}>
           <div style={{position: "absolute", cursor: "pointer", transition:".5s", zIndex: 3, top: 0, right: 130, color: "black" }} onClick={()=>{setOpacityImageJobs(0); setTransformJobs(1)}} ><h1 style={{fontSize: "30px"}}>X</h1></div>
           <div style={{position: "absolute", transition: ".5s", left: 30, top: 60, right: 30, color: "black" }}>
             <h1 style={{fontSize :"20px", fontWeight: "bold"}}>Flux Marine, Front End Web Developer<br/><h1 style={{fontSize:"15px"}}>Feb 2024 - June 2024</h1></h1>
