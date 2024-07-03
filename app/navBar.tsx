@@ -6,8 +6,7 @@ export default function NavBar() {
     const [gray, setGray] = useState("grayscale(0%)")
     const [changeNav, setChangeNav] = useState(window.innerWidth<1300 && window.innerWidth > 650)
     const [windowSize, setWindowSize] = useState([
-        window.innerHeight,
-        window.innerWidth,
+        0,0
       ]);
     
   const [linkedinHover, setLinkedInHover] = useState(0)
@@ -15,6 +14,8 @@ export default function NavBar() {
   const [fbHover, setFBHover] = useState(0)
     
       useEffect(() => {
+        setWindowSize([window.innerHeight, window.innerWidth]);
+        setChangeNav(window.innerWidth<1300 && window.innerWidth > 650)
         const windowSizeHandler = () => {
           setWindowSize([window.innerHeight, window.innerWidth]);
           setChangeNav(window.innerWidth<1300 && window.innerWidth > 650)

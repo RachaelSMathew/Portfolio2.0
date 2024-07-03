@@ -16,11 +16,11 @@ export default function Page() {
   const [transformJobs, setTransformJobs] = useState(1)
 
   const [windowSize, setWindowSize] = useState([
-    window.innerHeight,
-    window.innerWidth,
+    0,0
   ]);
 
   useEffect(() => {
+    setWindowSize([window.innerHeight, window.innerWidth]);
     const windowSizeHandler = () => {
       setWindowSize([window.innerHeight, window.innerWidth]);
     };
