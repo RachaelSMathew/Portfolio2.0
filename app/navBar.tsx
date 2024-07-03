@@ -5,20 +5,18 @@ import profilePic from './roseRachael.png'
 export default function NavBar() {
     const [gray, setGray] = useState("grayscale(0%)")
     const [changeNav, setChangeNav] = useState(window.innerWidth<1300 && window.innerWidth > 650)
-    const [windowSize, setWindowSize] = useState([
-        0,0
-      ]);
+    const [windowSize, setWindowSize] = useState([0,0]);
     
   const [linkedinHover, setLinkedInHover] = useState(0)
   const [intstaHover, setInstaHover] = useState(0)
   const [fbHover, setFBHover] = useState(0)
     
       useEffect(() => {
-        if (typeof window === "undefined") return
+        if (window !== null && typeof window === "undefined") return
         setWindowSize([window.innerHeight, window.innerWidth]);
         setChangeNav(window.innerWidth<1300 && window.innerWidth > 650)
         const windowSizeHandler = () => {
-          if (typeof window === "undefined") return
+          if (window !== null && typeof window === "undefined") return
           setWindowSize([window.innerHeight, window.innerWidth]);
           setChangeNav(window.innerWidth<1300 && window.innerWidth > 650)
         };
