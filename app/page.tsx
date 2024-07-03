@@ -36,7 +36,7 @@ export default function Page() {
   return (
     typeof window === "undefined" ? <></> :
     <>
-    <Head><title>rachael's world</title></Head>
+    <title>rachael's world</title>
     <NavBar/>
     <Image src={background} style={{
         position: "fixed",
