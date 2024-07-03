@@ -16,24 +16,8 @@ export default function Page() {
   const [transformJobs, setTransformJobs] = useState(1)
   const [windowSize, setWindowSize] = useState([0,0]);
 
-  useEffect(() => {
-    if (typeof window === undefined) {
-      return;
-    }
-    if (window !== null && typeof window !== "undefined") setWindowSize([window.innerHeight, window.innerWidth]);
-    const windowSizeHandler = () => {
-      if (window !== null && typeof window !== "undefined") setWindowSize([window.innerHeight, window.innerWidth]);
-    };
-    window.addEventListener("resize", windowSizeHandler);
-
-    return () => {
-      window.removeEventListener("resize", windowSizeHandler);
-    };
-  }, []);
-
 
   return (
-    window == null || typeof window === undefined ? <></> :
     <>
     <NavBar/>
     <Image src={background} style={{

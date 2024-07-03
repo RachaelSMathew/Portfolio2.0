@@ -10,25 +10,6 @@ export default function NavBar() {
   const [linkedinHover, setLinkedInHover] = useState(0)
   const [intstaHover, setInstaHover] = useState(0)
   const [fbHover, setFBHover] = useState(0)
-    
-      useEffect(() => {
-        if (typeof window === undefined) {
-          return;
-        }
-        if (window !== null && typeof window === "undefined") return
-        setWindowSize([window.innerHeight, window.innerWidth]);
-        setChangeNav(window.innerWidth<1300 && window.innerWidth > 650)
-        const windowSizeHandler = () => {
-          if (window !== null && typeof window === "undefined") return
-          setWindowSize([window.innerHeight, window.innerWidth]);
-          setChangeNav(window.innerWidth<1300 && window.innerWidth > 650)
-        };
-        window.addEventListener("resize", windowSizeHandler);
-    
-        return () => {
-          window.removeEventListener("resize", windowSizeHandler);
-        };
-      }, []);
 
     return (
         <view style={{width: windowSize[1], height: windowSize[0], top: changeNav ? 29:0, display: "flex", position: "fixed", alignItems: "flex-end", justifyContent: "space-around", flexDirection:  changeNav ? 'row': "column"}}>
