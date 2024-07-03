@@ -17,11 +17,11 @@ export default function Page() {
   const [windowSize, setWindowSize] = useState([0,0]);
 
   useEffect(() => {
-    if (typeof window === undefined) return
+    if (typeof window === "undefined") return
     setWindowSize([window.innerHeight, window.innerWidth]);
 
     const windowSizeHandler = () => {
-      if (typeof window === undefined) return
+      if (typeof window === "undefined") return
       setWindowSize([window.innerHeight, window.innerWidth]);
     };
 
@@ -33,7 +33,7 @@ export default function Page() {
   }, []);
 
   return (
-    window == null || typeof window === undefined ? <></> :
+    typeof window === "undefined" ? <></> :
     <>
     <NavBar/>
     <Image src={background} style={{
