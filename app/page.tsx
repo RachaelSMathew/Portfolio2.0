@@ -22,7 +22,7 @@ export default function Page() {
   useEffect(() => {
     if (typeof window !== "undefined") setWindowSize([window.innerHeight, window.innerWidth]);
     const windowSizeHandler = () => {
-      setWindowSize([window.innerHeight, window.innerWidth]);
+      if (typeof window !== "undefined") setWindowSize([window.innerHeight, window.innerWidth]);
     };
     window.addEventListener("resize", windowSizeHandler);
 
