@@ -18,7 +18,7 @@ export default function Jobs({transformBooks, transformProjects, transformJobs, 
           <div style={{position: "absolute", cursor: "pointer", transition:".5s", zIndex: 3, top: 0, right: 130, color: "black" }} onClick={()=>{setOpacityImageJobs(0); setTransformJobs(1)}} ><h1 style={{fontSize: "30px"}}>X</h1></div>
           <div style={{position: "absolute", transition: ".5s", left: 30, top: 60, right: 30, color: "black" }}>
             <h1 style={{fontSize :"20px", fontWeight: "bold"}}>Flux Marine, Front End Web Developer<br/><h1 style={{fontSize:"15px"}}>Feb 2024 - June 2024</h1></h1>
-            &nbsp;&nbsp;&nbsp;&nbsp;Developed the front end of a progressive web app using React Native that allows users to track their boat’s location, past trips, speed, battery, voltage, and other metrics. 
+            &nbsp;&nbsp;&nbsp;&nbsp;Developed front end of a progressive web app using React Native that allows users to track their boat’s location, past trips, speed, battery, voltage, and other metrics. 
             <br/>&nbsp;&nbsp;&nbsp;&nbsp;Used service workers to create a connectivity-independent app that caches data to speed up information retrieval. 
             <br/>&nbsp;&nbsp;&nbsp;&nbsp;Worked with AWS Amplify to test and deploy the app and AWS Dynamodb to store user data.
             <h1 style={{fontSize :"20px", fontWeight: "bold"}}>GameChanger, iOS Developer Intern<br/><h1 style={{fontSize:"15px"}}>June 2023 - Aug 2023</h1></h1>
