@@ -20,7 +20,7 @@ export default function Page() {
   ]);
 
   useEffect(() => {
-    setWindowSize([window.innerHeight, window.innerWidth]);
+    if (typeof window !== "undefined") setWindowSize([window.innerHeight, window.innerWidth]);
     const windowSizeHandler = () => {
       setWindowSize([window.innerHeight, window.innerWidth]);
     };
@@ -33,6 +33,7 @@ export default function Page() {
 
 
   return (
+    typeof window === "undefined" ? <></> :
     <>
     <NavBar/>
     <Image src={background} style={{
