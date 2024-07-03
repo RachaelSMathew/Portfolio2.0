@@ -15,21 +15,7 @@ export default function RootLayout({
   }: {
     children: React.ReactNode
   }) {
-    const [windowSize, setWindowSize] = useState([
-      window.innerHeight,
-      window.innerWidth,
-    ]);
-  
-    useEffect(() => {
-      const windowSizeHandler = () => {
-        setWindowSize([window.innerWidth, window.innerHeight]);
-      };
-      window.addEventListener("resize", windowSizeHandler);
-  
-      return () => {
-        window.removeEventListener("resize", windowSizeHandler);
-      };
-    }, []);
+
     return (
       <html className={zeyada.className} lang="en">
         <body style={{backgroundColor: "#666147", overflow: "scroll"}}>{children}</body>

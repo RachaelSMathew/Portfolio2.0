@@ -4,7 +4,7 @@ import profilePic from './roseRachael.png'
 
 export default function NavBar() {
     const [gray, setGray] = useState("grayscale(0%)")
-    const [changeNav, setChangeNav] = useState(window.innerWidth<1300 && window.innerWidth > 650)
+    const [changeNav, setChangeNav] = useState(false)
     const [windowSize, setWindowSize] = useState([0,0]);
     
   const [linkedinHover, setLinkedInHover] = useState(0)
