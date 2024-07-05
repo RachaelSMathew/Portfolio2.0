@@ -29,7 +29,7 @@ export default function Literature({transformBooks, transformProjects, transform
             <div onClick={()=> {if(scroll > -100) setScroll(scroll-20)}} style={{position: "fixed", display: scroll <= -100 ? "none":"flex", cursor: "pointer", zIndex: 3, top: 150, left: 250}} ><Image style={{display: "block"}} src={arrow} width={40} alt={""}    /></div>
           </div>
           <div style={{position: "absolute", transition: ".5s", left: 10, top: 33, color: "black" }}>
-            <div style={{marginLeft: scroll+"px", transition: "all 1s ease-out", flexDirection: "row", gap: 10, display: "flex", overflowY: "hidden"}}>
+            <div style={{marginLeft: scroll+"px", transition: "all 1s ease-out", flexDirection: "row", gap: 10, display: "flex", overflowX: "hidden", overflowY: "hidden"}}>
             <div style={{ flexDirection:"column", display: "flex"}}>
               <Image src={animalFarm} width={70} height={104} alt={""}    />
               <p style={{fontSize: 12, margin: 0, height: "15px"}}>Animal Farm</p>
@@ -59,7 +59,7 @@ export default function Literature({transformBooks, transformProjects, transform
             </div>
             <div style={{flexDirection:"column", display: "flex"}}>
             <Image style={{display: "block"}} src={yellowWallpaper} width={64} alt={""}    />
-            <p style={{fontSize: 11, margin: 0, height: "15px"}}>Yellow Wallpaper</p>
+            <p style={{fontSize: 11, margin: 0, width: "100px", overflow: "hidden", height: "15px"}}>Yellow Wallpaper</p>
               <p style={{fontSize: 9, margin: 0, height: "15px"}}>Charlotte Gilman</p>
               <div style={{flexDirection: "row", height: "10px", gap: 2, alignItems: "center", margin: 0, display: "flex"}}>
                 <Image style={{display: "block", marginTop: -5, }} src={star} width={10} alt={""}    />
