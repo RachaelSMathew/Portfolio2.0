@@ -20,12 +20,11 @@ export default function Projects({transformBooks, transformProjects, transformJo
             <h1 style={{fontSize :"20px", fontWeight: "bold"}}>Python Spellchecker<br/><h1 style={{fontSize:"15px"}}>Python</h1></h1>
             &nbsp;&nbsp;&nbsp;&nbsp;Developed a spellchecker using a phonetic algorithm, Levenshtein distance, and noisy channel model.
             <h1 style={{fontSize :"20px", fontWeight: "bold"}}>C++ Tic-Tac-Toe Game<br/><h1 style={{fontSize:"15px"}}>C++, CMake </h1></h1>
-            &nbsp;&nbsp;&nbsp;&nbsp;Developed a tic-tac-toe game of user vs. computer; the latter calculates its next move using the Minimax algorithm, and the game is played on a GUI created with QT Creator
+            &nbsp;&nbsp;&nbsp;&nbsp;Developed a tic-tac-toe game of user vs. computer; the latter calculates its next move using the Minimax algorithm
             <h1 style={{fontSize :"20px", fontWeight: "bold"}}>Note-Taking Web Application<br/><h1 style={{fontSize:"15px"}}>React, Firebase </h1></h1>
-            &nbsp;&nbsp;&nbsp;&nbsp;Implemented a note-taking web app where users can create an account, make private or public notes for others to see, and like, delete, and filter notes.
+            &nbsp;&nbsp;&nbsp;&nbsp;Implemented a note-taking web app where users can create private or public notes, and like, delete, and filter notes.
             <h1 style={{fontSize :"20px", fontWeight: "bold"}}>Sleep Tracking Web Application<br/><h1 style={{fontSize:"15px"}}>React, Axios, Django</h1></h1>
             &nbsp;&nbsp;&nbsp;&nbsp;Developed a full-stack web application that tracks and stores the user's sleep periods and dreams.
-            <br/>&nbsp;&nbsp;&nbsp;&nbsp;Used JSON Web Tokens to create login and registration system and SQLite to store databases.
             </div>
           </div>}
         </div>
