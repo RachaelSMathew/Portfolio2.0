@@ -28,9 +28,9 @@ export default function Literature({transformBooks, transformProjects, transform
             <div onClick={()=> {if(scroll < 0) setScroll(scroll+20)}} style={{position: "fixed", display: scroll >= 0 ? "none":"flex", cursor: "pointer", zIndex: 3, top: 150, left: 70}} ><Image style={{display: "block", transform: "rotateY(180deg)"}} src={arrow} width={40} alt={""}    /></div>
             <div onClick={()=> {if(scroll > -100) setScroll(scroll-20)}} style={{position: "fixed", display: scroll <= -100 ? "none":"flex", cursor: "pointer", zIndex: 3, top: 150, left: 250}} ><Image style={{display: "block"}} src={arrow} width={40} alt={""}    /></div>
           </div>
-          <div style={{position: "absolute", transition: ".5s", left: 10, top: 33, color: "black" }}>
+          <div style={{position: "absolute", transition: ".5s", top: 33, width: "100%" }}>
             <div style={{marginLeft: scroll+"px", transition: "all 1s ease-out", flexDirection: "row", gap: 10, display: "flex", overflowX: "hidden", overflowY: "hidden"}}>
-            <div style={{ flexDirection:"column", display: "flex"}}>
+            <div style={{ flexDirection:"column", paddingLeft: "10px", display: "flex"}}>
               <Image src={animalFarm} width={70} height={104} alt={""}    />
               <p style={{fontSize: 12, margin: 0, height: "15px"}}>Animal Farm</p>
               <p style={{fontSize: 9, margin: 0, height: "15px"}}>George Orwell</p>
