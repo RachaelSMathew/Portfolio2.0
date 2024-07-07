@@ -25,8 +25,8 @@ export default function Literature({transformBooks, transformProjects, transform
           <div style={{position: "fixed", cursor: "pointer", transition:".5s", zIndex: 3, top: 57, right: 70, color: "black" }} onClick={()=>{setOpacityImageLiterature(0); setTransformBooks(1)}} ><h1 style={{fontSize: "18px"}}>X</h1></div>
           <div style={{position: "fixed", cursor: "pointer", transition:".5s", zIndex: 3, top: 60, left: 70, color: "black" }} ><h1 style={{fontSize: "15px"}}>my favorites</h1></div>
           <div style={{flexDirection: "row", alignItems :"center", gap: 4, display: "flex"}}>
-            <div onClick={()=> {if(scroll < 0) setScroll(scroll+20)}} style={{position: "fixed", display: scroll >= 0 ? "none":"flex", cursor: "pointer", zIndex: 3, top: 150, left: 70}} ><Image style={{display: "block", transform: "rotateY(180deg)"}} src={arrow} width={40} alt={""}    /></div>
-            <div onClick={()=> {if(scroll > -100) setScroll(scroll-20)}} style={{position: "fixed", display: scroll <= -100 ? "none":"flex", cursor: "pointer", zIndex: 3, top: 150, left: 250}} ><Image style={{display: "block"}} src={arrow} width={40} alt={""}    /></div>
+            <div onClick={()=> {if(scroll < 0) setScroll(scroll+20)}} style={{position: "fixed", display: scroll >= 0 ? "none":"flex", cursor: "pointer", zIndex: 3, top: 150, left: 70}} ><Image style={{display: "block", transform: "rotateY(180deg)"}} src={arrow} width={50} alt={""}/></div>
+            <div onClick={()=> {if(scroll > -100) setScroll(scroll-20)}} style={{position: "fixed", display: scroll <= -100 ? "none":"flex", cursor: "pointer", zIndex: 3, top: 150, left: 240}} ><Image style={{display: "block"}} src={arrow} width={50} alt={""}/></div>
           </div>
           <div style={{position: "absolute", transition: ".5s", top: 33, width: "100%" }}>
             <div style={{marginLeft: scroll+"px", transition: "all 1s ease-out", flexDirection: "row", gap: 10, display: "flex", overflowX: "hidden", overflowY: "hidden"}}>
