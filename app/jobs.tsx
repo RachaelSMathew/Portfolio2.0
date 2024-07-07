@@ -11,8 +11,8 @@ export default function Jobs({transformBooks, transformProjects, transformJobs, 
     var changes = 0
 
     const getScroll = (event: WheelEvent) => {
-      if(help + event.deltaY >= 0 && help + event.deltaY <= 680) help += event.deltaY
-      else if (help + event.deltaY > 680) help = 680
+      if(help + event.deltaY >= 0 && help + event.deltaY <= 485) help += event.deltaY
+      else if (help + event.deltaY > 485) help = 485
       else help = 0
       changes += 1
       if(changes == 7) {
@@ -48,7 +48,7 @@ export default function Jobs({transformBooks, transformProjects, transformJobs, 
             <h1 style={{fontSize :"20px", color: scrollJobs>=145.44?"gold":"black", transition: "all .5s ease-out", fontWeight: "bold"}}>GameChanger, iOS Developer Intern<br/><h1 style={{fontSize:"15px", color: scrollJobs>=175.44?"gold":"black", transition: "all .5s ease-out",}}>June 2023 - Aug 2023</h1></h1>
             <h1 style={{fontSize :"15px", color: scrollJobs>=215.44?"gold":"black", transition: "all .5s ease-out"}} >&nbsp;&nbsp;&nbsp;&nbsp;Enhanced GameChanger app by adding linkable buttons using RxSwift, replacing directional icons as PDF files using SnapKit, adding/editing "help & feedback" buttons/snackbars, and realigning misplaced icons.</h1>
             <h1 style={{fontSize :"20px", fontWeight: "bold", color: scrollJobs>=335.44?"gold":"black", transition: "all .5s ease-out"}}>iRobot, Software DevOps Co-op<br/><h1 style={{fontSize:"15px", color: scrollJobs>=355.44?"gold":"black", transition: "all .5s ease-out"}}>June 2022 - Dec 2022</h1></h1>
-            <h1 style={{fontSize :"15px", fontWeight: "bold", color: scrollJobs>=370.44?"gold":"black", transition: "all .5s ease-out"}}>&nbsp;&nbsp;&nbsp;&nbsp;Designed Jenkins pipelines using Groovy and EC2 instances and executed tasks in a Docker container using an ECR image to automate tasks such as configuring repositories, uploading build files to Artifactory, and syncing files.</h1>
+            <h1 style={{fontSize :"15px", fontWeight: "bold", color: scrollJobs>=397.44?"gold":"black", transition: "all .5s ease-out"}}>&nbsp;&nbsp;&nbsp;&nbsp;Designed Jenkins pipelines using Groovy and EC2 instances and executed tasks in a Docker container using an ECR image to automate tasks such as configuring repositories, uploading build files to Artifactory, and syncing files.</h1>
           </p>
           </div>}
         </div>
