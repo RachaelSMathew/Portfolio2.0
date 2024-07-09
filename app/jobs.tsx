@@ -61,7 +61,7 @@ export default function Jobs({transformBooks, transformProjects, transformJobs, 
             {/** scrollJobs can only be compared to decimals */}
             <h1 style={{fontSize :"20px", color: scrollJobs>=14.44?"gold":"black", transition: "all .5s ease-out", textAlign: "center", fontWeight: "bold"}}>Flux Marine, Front End Web Developer</h1>
             <h1 style={{color: scrollJobs>=44.44?"gold":"black", transition: "all .5s ease-out", fontSize:"15px"}}>Feb 2024 - June 2024</h1>
-            <Image style={{position: "absolute", top: 10, transition: "all 1s ease-out", opacity: opacityFlux}} src={flux} width={460} alt={""}    />
+            <Image style={{position: "absolute", top: 10, transition: "all 0.5s ease-out", opacity: opacityFlux}} src={flux} width={460} alt={""}    />
             <h1 style={{fontSize :"15px", position: "relative", color: scrollJobs>=75.44?"gold":"black", transition: "all .5s ease-out"}} >&nbsp;&nbsp;&nbsp;&nbsp;Developed front end of a progressive web app using React Native that allows users to track their boat’s location, past trips, speed, battery, voltage, and other metrics.</h1>
             <h1 style={{fontSize :"20px", color: scrollJobs>=145.44?"gold":"black", transition: "all .5s ease-out", textAlign: "center", fontWeight: "bold"}}>GameChanger, iOS Developer Intern<br/><h1 style={{fontSize:"15px", color: scrollJobs>=175.44?"gold":"black", transition: "all .5s ease-out",}}>June 2023 - Aug 2023</h1></h1>
             <Image style={{position: "absolute", top: 270, right: 40, transition: "all 2s ease-out", opacity: !firstScroll ? 0.6 : scrollJobs>=215.44?0.6:0}} src={gameChanger} width={260} alt={""}    />
