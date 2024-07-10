@@ -12,7 +12,7 @@ export default function Projects({transformBooks, transformProjects, transformJo
         <div onMouseLeave={() => transformProjects!==1.6&&setOpacityImageProjects(0)} onMouseEnter={() => transformProjects!==1.6&&setOpacityImageProjects(0.5)} style={{position: "absolute", top: 60, bottom: 0, left: 30, height: "70%", width: "80%", transition: ".5s ease", backgroundColor: `  rgba(158,103,36,${opacityImageProjects})`}}>
           {transformProjects !== 1.6 ? 
           <>
-          <h1 style={{opacity: opacityImageProjects === 0?0:1, position: "absolute", transition: ".5s", top: 0, left: 40, color: "white", fontSize :"40px", }}>projects</h1>
+          <h1 style={{opacity: opacityImageProjects === 0?0:1, position: "absolute", transition: ".5s", top: 0, left: 40, color: "white", margin: 0, fontSize :"40px", }}>projects</h1>
           <h1 style={{opacity: opacityImageProjects === 0?0:1, position: "absolute", transition: ".5s", top: "75%", left: 40, color: "white", fontSize :"20px", }}>Hearts are Trumps (1872)</h1></>:
           <div style={{overflow: "scroll", top: 10, left: 30, width: "283px", height: "225px", position: "relative", backgroundColor: "rgba(173,125,56, 0.3)"}}>
           <div style={{position: "absolute", cursor: "pointer", transition:".5s", zIndex: 3, top: 0, right: 30, color: "black" }} onClick={()=>{setOpacityImageProjects(0); setTransformProjects(1)}} ><h1 style={{fontSize: "30px"}}>X</h1></div>

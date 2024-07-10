@@ -19,7 +19,7 @@ export default function Literature({transformBooks, transformProjects, transform
         <div onMouseLeave={() => transformBooks!==1.8&&setOpacityImageLiterature(0)} onMouseEnter={() => transformBooks!==1.8&&setOpacityImageLiterature(0.6)} style={{position: "absolute", top: 65, left: 60, height: "60%", width: "70%", transition: ".5s ease", backgroundColor: `  rgba(85,64,49,${opacityImageLiterature})`}}>
           {transformBooks !== 1.8 ? 
           <>
-          <h1 style={{opacity: opacityImageLiterature === 0?0:1, position: "absolute", transition: ".5s", top: 0, left: 20, color: "white", fontSize :"40px", }}>literature</h1>
+          <h1 style={{opacity: opacityImageLiterature === 0?0:1, position: "absolute", transition: ".5s", top: 0, left: 20, color: "white", margin: 0, fontSize :"40px", }}>literature</h1>
           <h1 style={{opacity: opacityImageLiterature === 0?0:1, position: "absolute", transition: ".5s", top: "75%", left: 20, color: "white", fontSize :"20px", }}>Isabella (1848)</h1></>:
           <div style={{overflow: "scroll", width: "235px", height: "180px", position: "relative", backgroundColor: "rgba(220,190,161, 0.3)"}}>
           <div style={{position: "fixed", cursor: "pointer", transition:".5s", zIndex: 3, top: 57, right: 70, color: "black" }} onClick={()=>{setOpacityImageLiterature(0); setTransformBooks(1)}} ><h1 style={{fontSize: "18px"}}>X</h1></div>
