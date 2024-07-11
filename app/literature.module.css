@@ -1,0 +1,103 @@
+/** CSS Modules are only enabled for files with the .module.css and .module.sass extensions **/
+/** global styling: https://nextjs.org/docs/app/building-your-application/styling/css-modules#global-styles **/
+.title {
+    position: absolute;
+    transition: .5s;
+    top: 0;
+    left: 20px;
+    color: white;
+    margin: 0;
+    font-size :40px; 
+}
+.overlay {
+    background-color: red;
+    position: absolute;
+    left: 60px;
+    top: 65px;
+    height: 60%;
+    width: 70%;
+    transition: .5s ease,
+}
+.arrowContainer {
+    flex-direction: row;
+    align-items : center;
+    gap: 4;
+    display: flex
+}
+.arrow {
+    position: fixed;
+    cursor: pointer;
+    z-index: 3;
+    top: 150px;
+    left: 70px
+}
+.header {
+    position: fixed;
+    cursor: pointer;
+    transition:.5s;
+    z-index: 3;
+    top: 57px;
+    right: 70px;
+    color: black 
+}
+.paintingTitle {
+    position: absolute;
+    transition: .5s;
+    top: 65%;
+    left: 20px;
+    color: white;
+    font-size: 20px, 
+}
+.headerContainer {
+    overflow: scroll;
+    width: 235px;
+    height: 180px;
+    position: relative;
+    background-color: rgba(220,190,161, 0.3)
+}
+.bookScroll {
+    transition: all 1s ease-out;
+    flex-direction: row;
+    gap: 10px;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden
+}
+.singleBook {
+    flex-direction:column;
+    display: flex
+}
+.bookContainer {
+    position: absolute;
+    transition: .5s;
+    top: 33px;
+    width: 100% 
+}
+.numRating {
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 7px
+}
+.star {
+    display: block;
+    margin-top: -5px
+}
+.rating {
+    flex-direction: row;
+    height: 10px;
+    gap: 2px;
+    align-items: center;
+    margin: 0;
+    display: flex
+}
+.author {
+    font-size: 9px;
+    margin: 0;
+    height: 15px,
+}
+.titleBook {
+    font-size: 11px;
+    margin: 0;
+    height: 15px;
+    overflow-x: hidden;
+}
