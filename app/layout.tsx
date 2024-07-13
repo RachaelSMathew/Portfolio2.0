@@ -9,16 +9,33 @@ const zeyada = Zeyada({
   style: 'normal'
 })
 
-
 export default function RootLayout({
     children,
   }: {
     children: React.ReactNode
   }) {
 
+    const [windowSize, setWindowSize] = useState([0,0]);
+    
+    useEffect(() => {
+        if (typeof window === "undefined") return
+        setWindowSize([window.innerHeight, window.innerWidth]);
+        const windowSizeHandler = () => {
+          if (typeof window === "undefined") return
+          setWindowSize([window.innerHeight, window.innerWidth]);
+        };
+
+        window.addEventListener("resize", windowSizeHandler);
+
+        return () => {
+          window.removeEventListener("resize", windowSizeHandler);
+        };
+    }, []);
+
+
     return (
       <html className={zeyada.className} lang="en">
-        <body style={{backgroundColor: "#666147", overflow: "scroll"}}>{children}</body>
+        <body style={{backgroundColor: "#666147", overflow: windowSize[1] <=650 ? "scroll":"hidden"}}>{children}</body>
       </html>
     )
   }
