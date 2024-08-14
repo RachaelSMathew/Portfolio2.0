@@ -51,7 +51,15 @@ export default function Jobs({transformBooks, transformProjects, transformJobs, 
         <div onMouseLeave={() => transformJobs!==1.3&&setOpacityImageJobs(0)} onMouseEnter={() => transformJobs!==1.3&&setOpacityImageJobs(0.6)} style={{position: "absolute", top: 100, left: 115, height: "62%", width: "54%", transition: ".5s ease", borderRadius: "210px /290px", backgroundColor: `  rgba(178,157,103,${opacityImageJobs})`}}>
           {transformJobs !== 1.3 ? 
           <>
-          <h1 style={{opacity: opacityImageJobs === 0?0:1, position: "absolute", transition: ".5s", top: 0, left: 50, color: "white", fontSize :"35px", }}>past occupations</h1>
+          {/** curved jobs section title when hover over source: https://css-tricks.com/snippets/svg/curved-text-along-path/ */}
+          <svg viewBox="0 0 500 500">
+            <path style={{fill: "transparent"}} id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+            <text width="500">
+              <textPath style={{opacity: opacityImageJobs === 0?0:1, position: "absolute", transition: ".5s", top: 0, left: 50, fontWeight: "900", fill: "white", fontSize: "75px"}} xlinkHref="#curve">
+                past occupations
+              </textPath>
+            </text>
+          </svg>
           <h1 style={{opacity: opacityImageJobs === 0?0:1, position: "absolute", transition: ".5s", top: "70%", left: 70, color: "white", fontSize :"20px", }}>The Martyr of <br/>the Solway(1871)</h1></>:
           <div style={{overflow: "scroll", overflowX: "hidden", borderRadius: "210px /290px", width: "270px", height: "372px", position: "relative", backgroundColor: "rgba(190,172,124, 0.3)"}}>
           <div style={{position: "absolute", cursor: "pointer", transition:".5s", zIndex: 3, top: 0, right: 130, color: "black" }} onClick={()=>{setOpacityImageJobs(0); setScrollJobs(0); scrollVar = 0;  setTransformJobs(1)}} ><h1 style={{fontSize: "30px"}}>X</h1></div>
