@@ -48,7 +48,7 @@ export default function NavBar() {
               onMouseLeave={() => setHoverArray(hoverArray.map((c, i) => { return i===index?0:c}))} 
               style={{writingMode: changeNav ? "horizontal-tb":"vertical-lr", cursor: 'pointer'}}>
                 <span style={{color: "white", transition: "1.0s", fontSize: "20px", opacity:hoverArray[index]}}>‧₊˚</span>
-                <a href={urls[index]} style={{color: "white", textDecoration: "none"}}>{label}</a>
+                <a href={urls[index]} style={{color: "white", fontSize: windowSize[1] < 400 ? '20px': '30px', textDecoration: "none"}}>{label}</a>
                 <span style={{color: "white", transition: "1.0s", fontSize: "20px", opacity:hoverArray[index]}}>˚₊‧</span>
               </h1>
             )}
