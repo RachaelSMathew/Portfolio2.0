@@ -37,7 +37,7 @@ export default function Page() {
     typeof window === "undefined" ? <></> :
     <>
     <title>rachael's world</title>
-    {windowSize[1] > 400 && (transformBooks <= 1.3 && transformJobs < 1.3 && transformProjects <= 1.3) && <NavBar/>}
+    {(windowSize[1] <= 600 && (transformBooks > 1.3 || transformJobs >= 1.3 || transformProjects > 1.3)) ? null : <NavBar/>}
     <Image src={background} style={{
         position: "fixed",
         top: 0,
