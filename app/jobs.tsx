@@ -52,7 +52,7 @@ export default function Jobs({transformBooks, transformProjects, transformJobs, 
           {transformJobs !== 1.3 ? 
           <>
           {/** curved jobs section title when hover over source: https://css-tricks.com/snippets/svg/curved-text-along-path/ */}
-          <svg viewBox="0 0 500 500">
+          <svg viewBox="0 0 500 900">
             <path style={{fill: "transparent"}} id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
             <text width="500">
               <textPath style={{opacity: opacityImageJobs === 0?0:1, position: "absolute", transition: ".5s", top: 0, left: 50, fontWeight: "900", fill: "white", fontSize: "75px"}} xlinkHref="#curve">
